@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whack-a-mole</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div id="time_area">Time left:</div>
+        <div id="control_area">
+          <button id="start" tabindex="0" role="button">
+            Start
+          </button>
+          <button id="stop" disabled tabindex="0" role="button">
+            Stop
+          </button>
+          <button id="reset" disabled tabindex="0" role="button">
+            Reset
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div id="play_area">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="score_area">
+        <p>Score: 0</p>
+        <p>Misses: 0</p>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<!--
+  TODO:
+
+  Mole Stuff:
+  Make appear at random spots
+  Disappears when clicked on
+  Stays at spot for random intervals at a time
+
+  Game Stuff:
+  Time limit for game
+  Start button
+  Stop button
+  Reset button
+  Score
+
+  Other:
+  ie11 support
+  Responsive Design
+
+-->

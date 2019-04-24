@@ -52,13 +52,14 @@
   // Go through gameboard and determine moles and score
   function displayBoard() {
     if (gameFinished) {
-      alert(`TIMES UP! Score: ${score} Misses: ${misses}`);
+      alert("TIMES UP! Score: " + score + "Misses: " + misses);
       clearBoard();
     }
     // If game is not in progress do not display anything new!
     if (!gameInProgress) return;
     // Show current score
-    SCORE_AREA.innerHTML = `<p>Score: ${score}</p><p>Misses: ${misses}</p>`;
+    SCORE_AREA.innerHTML =
+      "<p>Score: " + score + "</p><p>Misses: " + misses + "</p>";
     // Show timer
     showTimer();
     // Show moles if any
@@ -74,7 +75,7 @@
   function showTimer() {
     // Show in seconds
     const displayTimeLeft = Math.floor(timeLeft / 1000);
-    TIME_AREA.innerHTML = `Time left: ${displayTimeLeft} seconds`;
+    TIME_AREA.innerHTML = "Time left: " + displayTimeLeft + "seconds";
     timeLeft = timeLeft - BOARD_INTERVAL;
     if (timeLeft <= 0) {
       gameInProgress = false;
@@ -99,7 +100,8 @@
       }
     }
     // Show current score
-    SCORE_AREA.innerHTML = `<p>Score: ${score}</p><p>Misses: ${misses}</p>`;
+    SCORE_AREA.innerHTML =
+      "<p>Score: " + score + "</p><p>Misses: " + misses + "</p>";
     // Show timer
     showTimer();
   }
